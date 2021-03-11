@@ -1,0 +1,10 @@
+.git/
+.webpack_cache/
+frontend/node_modules/
+backend/node_modules/
+public/
+
+.dockerignore
+.env*
+!.env.example
+docker-compose.override.yml
