@@ -293,7 +293,7 @@ You should get back no output. That means all occurrences of hello were
 replaced.
 
 ```sh
-grep -ER --exclude README.md --exclude-dir .git/ --exclude-dir .webpack_cache/ \
+grep -ER --exclude README.md --exclude-dir .git/ --exclude-dir \
   --exclude-dir frontend/node_modules/ \
   --exclude-dir backend/node_modules/ \
   --exclude-dir public/ "${lower}" .

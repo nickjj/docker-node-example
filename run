@@ -90,7 +90,7 @@ function yarn:outdated {
 
 function clean {
   # Remove cache and other machine generates files
-  rm -rf .webpack_cache/ public/*
+  rm -rf public/*
   touch public/.keep
 }
 
