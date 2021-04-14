@@ -7,14 +7,16 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
-- Nothing yet!
-
 ### Changed
 
 - Update knex from `0.21.19` to `0.95.2`
 - Update objection from `2.2.14` to `2.2.15`
 - Update eslint from `7.21.0` to `7.22.0`
 - Update TailwindCSS to `2.1.0` and enable the JIT compiler
+
+### Fixed
+
+- Fix `run` script error for unbound variable in older versions of Bash on macOS
 
 ### Removed
 
