@@ -257,7 +257,7 @@ docker-compose down -v
 #### Run the customize script included in this repo:
 
 You should run [this
-script](https://github.com/nickjj/docker-node-example/blob/main/run) from
+script](https://github.com/nickjj/docker-node-example/blob/main/customize) from
 inside of this git repo. It's going to:
 
 - Perform a number of find / replace actions
@@ -280,9 +280,9 @@ project generator tools or 3rd party dependencies.*
 
 If you're not comfy running the script or it doesn't work for whatever reasons
 you can [check it
-out](https://github.com/nickjj/docker-node-example/blob/main/run) and perform
-the actions manually. It's mostly running a find / replace across files and
-then renaming a few directories and files.
+out](https://github.com/nickjj/docker-node-example/blob/main/customize) and
+perform the actions manually. It's mostly running a find / replace across files
+and then renaming a few directories and files.
 
 #### Start and setup the project:
 
