@@ -7,6 +7,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- `bin/rename-project` script to assist with renaming the project
+
 ### Changed
 
 - Update knex from `0.21.19` to `0.95.2`
