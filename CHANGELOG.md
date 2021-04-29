@@ -17,6 +17,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update objection from `2.2.14` to `2.2.15`
 - Update eslint from `7.21.0` to `7.22.0`
 - Update TailwindCSS to `2.1.2` and enable the JIT compiler
+- Update all Webpack related dependencies to their latest versions
 - Replace `APP_NAME` in `run` script with `POSTGRES_USER` for connecting to psql
 
 ### Fixed
