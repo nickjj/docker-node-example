@@ -2,19 +2,19 @@
   "repository": {},
   "main": "./src/server",
   "dependencies": {
-    "connect-redis": "5.1.0",
+    "connect-redis": "5.2.0",
     "ejs": "3.1.6",
     "express": "4.17.1",
     "express-ejs-layouts": "2.5.0",
     "express-session": "1.17.1",
-    "knex": "0.95.2",
+    "knex": "0.95.4",
     "morgan": "1.10.0",
     "objection": "2.2.15",
-    "pg": "8.5.1",
-    "redis": "3.0.2"
+    "pg": "8.6.0",
+    "redis": "3.1.2"
   },
   "devDependencies": {
-    "eslint": "7.22.0",
+    "eslint": "7.25.0",
     "eslint-config-airbnb-base": "14.2.1",
     "eslint-plugin-import": "2.22.1",
     "jest": "26.6.3",
