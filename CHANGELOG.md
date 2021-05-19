@@ -27,6 +27,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Fixed
 
 - Fix `run` script error for unbound variable in older versions of Bash on macOS
+- Remove `.js` extension in `backend/src/knex.js` import (eslint 7.26+ doesn't like it)
 
 ### Removed
 
