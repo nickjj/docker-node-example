@@ -15,11 +15,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Use the Docker Compose spec in `docker-compose.yml` (removes `version:` property)
 - Update `connect-redis` from `5.1.0` to `5.2.0`
-- Update `knex` from `0.21.19` to `0.95.4`
+- Update `knex` from `0.21.19` to `0.95.6`
 - Update `objection` from `2.2.14` to `2.2.15`
 - Update `pg` from `8.5.1` to `8.6.0`
 - Update `redis` from `3.0.2` to `3.1.2`
-- Update `eslint` from `7.21.0` to `7.25.0`
+- Update `eslint` from `7.21.0` to `7.26.0`
 - Update TailwindCSS to `2.1.2` and enable the JIT compiler
 - Update all Webpack related dependencies to their latest versions
 - Replace `APP_NAME` in `run` script with `POSTGRES_USER` for connecting to psql
