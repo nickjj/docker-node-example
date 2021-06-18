@@ -30,7 +30,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `eslint` from `7.26.0` to `7.28.0`
 - Update `eslint-plugin-import` from `2.23.2` to `2.23.4`
 - Update `jest` from `26.6.3` to `27.0.4`
-- Update TailwindCSS to `2.1.2` and enable the JIT compiler
+- Update TailwindCSS to `2.2.2` and enable the JIT compiler
 - Update all Webpack related dependencies to their latest versions
 - Replace `APP_NAME` in `run` script with `POSTGRES_USER` for connecting to psql
 
