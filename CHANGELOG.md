@@ -14,6 +14,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Changed
 
 - Use the Docker Compose spec in `docker-compose.yml` (removes `version:` property)
+- Update PostgreSQL from `13.2` to `13.3`
 - Update `connect-redis` from `5.1.0` to `6.0.0`
 - Update `express-ejs-layouts` from `2.5.0` to `2.5.1`
 - Update `express-session` from `1.17.1` to `1.17.2`
