@@ -15,22 +15,26 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
-- Update `eslint` to `7.30.0`
+- Update `eslint` to `7.32.0`
 - Update `jest` to `27.0.6`
-- Update `knex` to `0.95.7`
+- Update `knex` to `0.95.9`
 - Update `nodemon` to `2.0.12`
+- Update `pg` to `8.7.1`
+- Update `supertest` to `6.1.4`
 
 #### Front-end dependencies
 
-- Update `@babel/preset-env` to `7.14.7`
+- Update `@babel/core` to `7.15.0`
+- Update `@babel/preset-env` to `7.15.0`
 - Update `autoprefixer` to `10.3.1`
 - Update `copy-webpack-plugin` to `9.0.1`
-- Update `css-loader` to `6.1.0`
+- Update `css-loader` to `6.2.0`
 - Update `css-minimizer-webpack-plugin` to `3.0.2`
-- Update `mini-css-extract-plugin` to `2.1.0`
+- Update `mini-css-extract-plugin` to `2.2.0`
 - Update `postcss-loader` to `6.1.1`
-- Update `tailwindcss` to `2.2.4`
-- Update `webpack` to `5.45.1`
+- Update `postcss` to `8.3.6`
+- Update `tailwindcss` to `2.2.7`
+- Update `webpack` to `5.48.0`
 
 ## [0.2.0] - 2021-06-18
 
