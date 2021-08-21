@@ -7,7 +7,7 @@
     "express": "4.17.1",
     "express-ejs-layouts": "2.5.1",
     "express-session": "1.17.2",
-    "knex": "0.95.9",
+    "knex": "0.95.10",
     "morgan": "1.10.0",
     "objection": "2.2.15",
     "pg": "8.7.1",
@@ -16,11 +16,11 @@
   "devDependencies": {
     "eslint": "7.32.0",
     "eslint-config-airbnb-base": "14.2.1",
-    "eslint-plugin-import": "2.23.4",
+    "eslint-plugin-import": "2.24.1",
     "jest": "27.0.6",
     "nodemon": "2.0.12",
     "superagent": "6.1.0",
-    "supertest": "6.1.4"
+    "supertest": "6.1.6"
   },
   "scripts": {
     "watch-production": "node ./src/server",
