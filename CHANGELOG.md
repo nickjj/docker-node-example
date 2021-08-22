@@ -11,7 +11,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Languages and services
 
-- Update `Node` to `14.17.3`
+- Update `Node` to `14.17.5` and switch to Debian Bullseye Slim
 
 #### Back-end dependencies
 
