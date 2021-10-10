@@ -22,6 +22,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `jest` to `27.1.0`
 - Update `knex` to `0.95.11`
 - Update `nodemon` to `2.0.12`
+- Update `objection` to `2.2.17`
 - Update `pg` to `8.7.1`
 - Update `supertest` to `6.1.6`
 
