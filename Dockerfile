@@ -51,7 +51,7 @@ USER node
 
 COPY --chown=node:node backend/package.json backend/*yarn* ./
 
-RUN yarn install
+RUN yarn install && yarn cache clean
 
 ARG NODE_ENV="production"
 ENV NODE_ENV="${NODE_ENV}" \

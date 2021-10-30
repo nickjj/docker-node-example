@@ -37,6 +37,12 @@ function secret {
   cmd node -e "console.log(crypto.randomBytes(64).toString('hex'));"
 }
 
+function hadolint {
+  # Lint Dockerfile with hadolint
+  docker container run --rm -i \
+    hadolint/hadolint hadolint --ignore DL3008 "${@}" - < Dockerfile
+}
+
 function eslint {
   # Lint back-end with eslint
   cmd eslint "./**/*.js" "${@}"
@@ -110,6 +116,7 @@ function ci:test {
   #   - https://github.com/koalaman/shellcheck
   #   - https://github.com/nickjj/wait-until
   shellcheck run bin/*
+  hadolint "${@}"
 
   cp --no-clobber .env.example .env
   cp --no-clobber docker-compose.override.yml.example docker-compose.override.yml
