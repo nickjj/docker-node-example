@@ -47,6 +47,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `webpack-cli` to `4.9.1`
 - Update `webpack` to `5.62.1`
 
+### Fixed
+
+- Run `yarn cache clean` after `yarn install`
+
 ## [0.2.0] - 2021-06-18
 
 ### Added
