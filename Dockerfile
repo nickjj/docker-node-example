@@ -1,4 +1,4 @@
-FROM node:14.18.0-bullseye-slim AS webpack
+FROM node:14.18.1-bullseye-slim AS webpack
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app/frontend
@@ -36,7 +36,7 @@ CMD ["bash"]
 
 ###############################################################################
 
-FROM node:14.18.0-bullseye-slim AS app
+FROM node:14.18.1-bullseye-slim AS webpack
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app/backend
