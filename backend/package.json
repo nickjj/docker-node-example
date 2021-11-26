@@ -7,18 +7,18 @@
     "express": "4.17.1",
     "express-ejs-layouts": "2.5.1",
     "express-session": "1.17.2",
-    "knex": "0.95.13",
+    "knex": "0.95.14",
     "morgan": "1.10.0",
-    "objection": "2.2.18",
+    "objection": "3.0.0",
     "pg": "8.7.1",
-    "redis": "3.1.2"
+    "redis": "4.0.0"
   },
   "devDependencies": {
-    "eslint": "8.2.0",
-    "eslint-config-airbnb-base": "14.2.1",
-    "eslint-plugin-import": "2.25.2",
+    "eslint": "8.3.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-import": "2.25.3",
     "jest": "27.3.1",
-    "nodemon": "2.0.14",
+    "nodemon": "2.0.15",
     "superagent": "6.1.0",
     "supertest": "6.1.6"
   },

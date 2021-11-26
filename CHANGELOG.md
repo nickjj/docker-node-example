@@ -21,13 +21,15 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
-- Update `eslint-plugin-import` to `2.25.2`
-- Update `eslint` to `8.2.0`
+- Update `eslint-config-airbnb-base` to `15.0.0`
+- Update `eslint-plugin-import` to `2.25.3`
+- Update `eslint` to `8.3.0`
 - Update `jest` to `27.3.1`
-- Update `knex` to `0.95.13`
-- Update `nodemon` to `2.0.14`
-- Update `objection` to `2.2.18`
+- Update `knex` to `0.95.14`
+- Update `nodemon` to `2.0.15`
+- Update `objection` to `3.0.0`
 - Update `pg` to `8.7.1`
+- Update `redis` to `4.0.0`
 - Update `supertest` to `6.1.6`
 
 #### Front-end dependencies
