@@ -29,7 +29,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `nodemon` to `2.0.15`
 - Update `objection` to `3.0.0`
 - Update `pg` to `8.7.1`
-- Update `redis` to `4.0.0`
+- Update `redis` to `3.1.2`
 - Update `supertest` to `6.1.6`
 
 #### Front-end dependencies
