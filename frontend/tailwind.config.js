@@ -1,6 +1,5 @@
 module.exports = {
-  mode: 'jit',
-  purge: [
+  content: [
     '/app/frontend/**/*.js',
     '/app/backend/src/**/*.ejs'
   ],

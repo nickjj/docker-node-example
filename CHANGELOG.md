@@ -13,6 +13,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- Update `frontend/tailwind.config.js` based on the new TailwindCSS v3 defaults
+
 #### Languages and services
 
 - Update `Node` to `14.18.1` and switch to Debian Bullseye Slim
