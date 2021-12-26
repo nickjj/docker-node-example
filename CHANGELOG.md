@@ -10,7 +10,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Added
 
 - Lint Dockerfile with <https://github.com/hadolint/hadolint>
-- `frontent:yarn:build:js` and `frontend:yarn:build:css` run script commands
+- `yarn:build:js` and `yarn:build:css` run script commands
 
 ### Changed
 
@@ -20,6 +20,12 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Rename `webpack` Docker build stage to `assets`
 - Copy all files into the `assets` build stage to simplify things
 - Replace `cp -a` with `cp -r` in Docker entrypoint to make it easier to delete older assets
+- Rename `run hadolint` to `run lint:dockerfile`
+- Rename `run esbuild` to `run lint`
+- Rename `run jest` to `run test`
+- Rename `run bash` to `run shell`
+- Rename `run frontend:yarn:outdated` to `run yarn:outdated:frontend`
+- Rename `run frontend:yarn:install` to `run yarn:install:frontend`
 
 #### Languages and services
 

@@ -166,7 +166,7 @@ Visit <http://localhost:8000> in your favorite browser.
 
 ```sh
 # You should get no output (that means everything is operational).
-./run eslint
+./run lint
 ```
 
 *We'll go over that `./run` script in a bit!*
@@ -175,7 +175,7 @@ Visit <http://localhost:8000> in your favorite browser.
 
 ```sh
 # You should see all passing tests. Warnings are typically ok.
-./run jest
+./run test
 ```
 
 #### Stopping everything:
@@ -280,8 +280,8 @@ adding custom changes.
 
 ```sh
 # Then in a 2nd terminal once it's up and ready.
-./run eslint
-./run jest
+./run lint
+./run test
 ```
 
 If everything passes now you can optionally `git add -A && git commit -m
@@ -313,13 +313,13 @@ these commands are in our `Dockerfile` we can get away with doing a
 
 #### In development:
 
-You can run `./run yarn:outdated` or `./run frontend:yarn:outdated` to get a
+You can run `./run yarn:outdated` or `./run yarn:outdated:frontend` to get a
 list of outdated dependencies based on what you currently have installed. Once
 you've figured out what you want to update, go make those updates in your
 `backend/package.json` and / or `frontend/package.json` file.
 
 Then to update your dependencies you can run `./run yarn:install` or `./run
-frontend:yarn:install`. That'll make sure any lock files get copied from
+yarn:install:frontend`. That'll make sure any lock files get copied from
 Docker's image (thanks to volumes) into your code repo and now you can commit
 those files to version control like usual.
 

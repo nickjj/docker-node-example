@@ -37,19 +37,19 @@ function secret {
   cmd node -e "console.log(crypto.randomBytes(64).toString('hex'));"
 }
 
-function hadolint {
-  # Lint Dockerfile with hadolint
+function lint:dockerfile {
+  # Lint Dockerfile
   docker container run --rm -i \
     hadolint/hadolint hadolint --ignore DL3008 "${@}" - < Dockerfile
 }
 
-function eslint {
-  # Lint back-end with eslint
+function lint {
+  # Lint back-end
   cmd eslint "./**/*.js" "${@}"
 }
 
-function jest {
-  # Run back-end test suite with jest
+function test {
+  # Run back-end test suite
   cmd jest --rootDir test/ --forceExit "${@}"
 }
 
@@ -58,20 +58,20 @@ function knex {
   cmd knex "${@}"
 }
 
-function bash {
-  # Start a Bash session in the web container
+function shell {
+  # Start a shell session in the web container
   cmd bash "${@}"
 }
 
 function psql {
-  # Connect to PostgreSQL with psql
+  # Connect to PostgreSQL
   # shellcheck disable=SC1091
   . .env
  _dc postgres psql -U "${POSTGRES_USER}" "${@}"
 }
 
 function redis-cli {
-  # Connect to Redis with redis-cli
+  # Connect to Redis
   _dc redis redis-cli "${@}"
 }
 
@@ -85,23 +85,23 @@ function yarn:outdated {
   cmd yarn outdated
 }
 
-function frontend:yarn:install {
+function yarn:install:frontend {
   # Install front-end yarn dependencies and write lock file
   _build_run_down js yarn install
 }
 
-function frontend:yarn:outdated {
+function yarn:outdated:frontend {
   # List any installed front-end packages that are outdated
   _dc js yarn outdated
 }
 
-function frontend:yarn:build:js {
+function yarn:build:js {
   # Build JS assets, this is meant to be run from within the assets container
   mkdir -p ../public/js
   node esbuild.config.js
 }
 
-function frontend:yarn:build:css {
+function yarn:build:css {
   # Build CSS assets, this is meant to be run from within the assets container
   local args=()
 
@@ -137,7 +137,7 @@ function ci:test {
   #   - https://github.com/koalaman/shellcheck
   #   - https://github.com/nickjj/wait-until
   shellcheck run bin/*
-  hadolint "${@}"
+  lint:dockerfile "${@}"
 
   cp --no-clobber .env.example .env
   cp --no-clobber docker-compose.override.yml.example docker-compose.override.yml
@@ -151,8 +151,8 @@ function ci:test {
     -e PGPASSWORD=${POSTGRES_PASSWORD} postgres \
     psql -U ${POSTGRES_USER} ${POSTGRES_USER} -c 'SELECT 1'"
 
-  eslint "${@}"
-  jest "${@}"
+  lint "${@}"
+  test "${@}"
 }
 
 function help {

@@ -15,8 +15,8 @@ x-assets: &default-assets
 services:
   js:
     <<: *default-assets
-    command: "../run frontend:yarn:build:js"
+    command: "../run yarn:build:js"
 
   css:
     <<: *default-assets
-    command: "../run frontend:yarn:build:css"
+    command: "../run yarn:build:css"
