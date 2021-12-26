@@ -31,9 +31,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Update `eslint-config-airbnb-base` to `15.0.0`
 - Update `eslint-plugin-import` to `2.25.3`
-- Update `eslint` to `8.4.1`
-- Update `jest` to `27.4.3`
-- Update `knex` to `0.95.14`
+- Update `eslint` to `8.5.0`
+- Update `express` to `4.17.2`
+- Update `jest` to `27.4.5`
+- Update `knex` to `0.95.15`
 - Update `nodemon` to `2.0.15`
 - Update `objection` to `3.0.0`
 - Update `pg` to `8.7.1`
