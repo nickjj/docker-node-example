@@ -10,16 +10,22 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Added
 
 - Lint Dockerfile with <https://github.com/hadolint/hadolint>
+- `frontent:yarn:build:js` and `frontend:yarn:build:css` run script commands
 
 ### Changed
 
 - Update `frontend/tailwind.config.js` based on the new TailwindCSS v3 defaults
+- Replace all traces of Webpack with esbuild
+- Move JS and CSS from `assets/app` to `assets/js` and `assets/css`
+- Rename `webpack` Docker build stage to `assets`
+- Copy all files into the `assets` build stage to simplify things
+- Replace `cp -a` with `cp -r` in Docker entrypoint to make it easier to delete older assets
 
 #### Languages and services
 
-- Update `Node` to `14.18.1` and switch to Debian Bullseye Slim
+- Update `Node` to `16.13.1` and switch to Debian Bullseye Slim
 - Update `PostgreSQL` to `14.1` and switch to Debian Bullseye Slim
-- Update `Redis` to switch to Debian Bullseye Slim
+- Update `Redis` to `6.2.6` and switch to Debian Bullseye Slim
 
 #### Back-end dependencies
 
@@ -36,24 +42,17 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Front-end dependencies
 
-- Update `@babel/core` to `7.16.0`
-- Update `@babel/preset-env` to `7.16.4`
-- Update `@babel/register` to `7.16.0`
 - Update `autoprefixer` to `10.4.0`
-- Update `babel-loader` to `8.2.3`
-- Update `copy-webpack-plugin` to `10.0.0`
-- Update `css-loader` to `6.5.1`
-- Update `css-minimizer-webpack-plugin` to `3.2.0`
-- Update `mini-css-extract-plugin` to `2.4.5`
-- Update `postcss-loader` to `6.2.1`
-- Update `postcss` to `8.4.4`
-- Update `tailwindcss` to `3.0.0`
-- Update `webpack-cli` to `4.9.1`
-- Update `webpack` to `5.65.0`
+- Update `postcss` to `8.4.5`
+- Update `tailwindcss` to `3.0.7`
 
 ### Fixed
 
 - Run `yarn cache clean` after `yarn install`
+
+### Removed
+
+- Deleting old assets in the Docker entrypoint (it's best to handle this out of band in a cron job, etc.)
 
 ## [0.2.0] - 2021-06-18
 

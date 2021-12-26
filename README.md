@@ -14,7 +14,7 @@ practices](https://nickjanetakis.com/blog/best-practices-around-production-ready
 based on building and deploying dozens of assorted Dockerized web apps since
 late 2014.
 
-**This app is using Express 4.17.1 and Node 14.18.1**. The screenshot doesn't
+**This app is using Express 4.17.1 and Node 16.13.1**. The screenshot doesn't
 get updated every time I bump the versions:
 
 [![Screenshot](.github/docs/screenshot.jpg)](https://github.com/nickjj/docker-node-example/blob/main/.github/docs/screenshot.jpg?raw=true)
@@ -48,7 +48,7 @@ out for something else on your own.
 
 ### Front-end
 
-- [Webpack](https://webpack.js.org/)
+- [esbuild](https://esbuild.github.io/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [Heroicons](https://heroicons.com/)
 
@@ -62,14 +62,15 @@ This isn't an exhaustive list but here's a few reasonable choices depending on
 how you're building your app:
 
 - <https://hotwired.dev/>
+- <https://htmx.org/>
 - <https://github.com/alpinejs/alpine>
 - <https://vuejs.org/>
 - <https://reactjs.org/>
 - <https://jquery.com/>
 
-On the bright side with Webpack being set up you can use any (or none) of these
-solutions very easily. You could follow a specific library's Webpack
-installation guides to get up and running in no time.
+On the bright side with esbuild being set up you can use any (or none) of these
+solutions very easily. You could follow a specific library's installation
+guides to get up and running in no time.
 
 Personally I'm going to be using Hotwire Turbo + Stimulus in most newer
 projects.
@@ -97,7 +98,7 @@ open an issue or PR.
     - Extract a bunch of configuration settings into environment variables
     - `backend/config/index.js` and the `.env` file handles configuration in all environments
 - **Front-end assets**:
-    - `frontend/` contains all your CSS, JS, images, fonts, etc. and is managed by Webpack
+    - `frontend/` contains all your CSS, JS, images, fonts, etc. and is managed by esbuild
     - Custom `502.html` and `maintenance.html` pages
     - Generate favicons using modern best practices
 - **Express defaults that are changed**:
@@ -160,9 +161,6 @@ in the `.env` file for the `DOCKER_WEB_PORT_FORWARD` variable to fix this.
 #### Check it out in a browser:
 
 Visit <http://localhost:8000> in your favorite browser.
-
-Not seeing any CSS? That means Webpack is still compiling. Give it
-a few more seconds and reload. It should self resolve.
 
 #### Linting the code base:
 
