@@ -4,4 +4,4 @@ module.exports = {
     '/app/frontend/css/**/*.css',
     '/app/backend/src/**/*.ejs'
   ],
-};
+}
