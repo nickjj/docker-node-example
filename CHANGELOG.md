@@ -21,6 +21,12 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `superagent` to `7.0.2`
 - Update `supertest` to `6.2.1`
 
+#### Front-end dependencies
+
+- Update `autoprefixer` to `10.4.2`
+- Update `esbuild` to `0.14.11`
+- Update `tailwindcss` to `3.0.15`
+
 ## [0.3.0] - 2021-12-26
 
 ### Added
