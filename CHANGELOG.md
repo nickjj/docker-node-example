@@ -17,7 +17,6 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `eslint` to `8.6.0`
 - Update `jest` to `27.4.7`
 - Update `objection` to `3.0.1`
-- Update `redis` to `4.0.2`
 - Update `superagent` to `7.0.2`
 - Update `supertest` to `6.2.1`
 
