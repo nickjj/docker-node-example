@@ -11,6 +11,12 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - [esbuild-copy-static-files](https://github.com/nickjj/esbuild-copy-static-files) plugin to drastically improve how static files are copied (check `frontend/assets/esbuild.config.js`)
 
+### Changed
+
+#### Languages and services
+
+- Update `Node` to `16.13.2`
+
 #### Back-end dependencies
 
 - Update `eslint-plugin-import` to `2.25.4`
