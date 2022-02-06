@@ -33,6 +33,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `esbuild` to `0.14.13`
 - Update `tailwindcss` to `3.0.15`
 
+### Fixed
+
+- `COPY --chown=node:node ../ ../` has been fixed to be `COPY --chown=node:node . ..`
+
 ## [0.3.0] - 2021-12-26
 
 ### Added
