@@ -15,7 +15,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Languages and services
 
-- Update `Node` to `16.13.2`
+- Update `Node` to `16.14.0`
 
 #### Back-end dependencies
 

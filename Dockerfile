@@ -1,4 +1,4 @@
-FROM node:16.13.2-bullseye-slim AS assets
+FROM node:16.14.0-bullseye-slim AS assets
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app/frontend
@@ -29,7 +29,7 @@ CMD ["bash"]
 
 ###############################################################################
 
-FROM node:16.13.2-bullseye-slim AS app
+FROM node:16.14.0-bullseye-slim AS app
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app/backend
