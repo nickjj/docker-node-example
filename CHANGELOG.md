@@ -22,7 +22,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Update `connect-redis` to `6.1.1`
 - Update `eslint-plugin-import` to `2.25.4`
-- Update `eslint` to `8.9.0`
+- Update `eslint` to `8.10.0`
 - Update `express` to `4.17.3`
 - Update `jest` to `27.5.1`
 - Update `knex` to `1.0.3`
