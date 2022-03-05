@@ -93,6 +93,9 @@ open an issue or PR.
 - **Linting and testing**:
     - *[eslint](https://github.com/eslint/eslint)* is used to lint the code base using `airbnb-base`
     - *[jest](https://github.com/facebook/jest)* for writing tests and reporting test coverage
+- **Routes**:
+    - Add `page` route to render a home page
+    - Add `up` route to provide a few health check pages
 - **Config**:
     - Log to STDOUT so that Docker can consume and deal with log output 
     - Extract a bunch of configuration settings into environment variables

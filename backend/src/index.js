@@ -6,6 +6,7 @@ const RedisStore = require('connect-redis')(session);
 
 const app = express();
 const pages = require('./routes/pages');
+const up = require('./routes/up');
 const config = require('../config');
 const redis = require('./redis');
 
@@ -27,6 +28,7 @@ app.set('layout', './layouts/app');
 app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
+app.use('/up/', up);
 app.use('/', pages);
 
 module.exports = app;

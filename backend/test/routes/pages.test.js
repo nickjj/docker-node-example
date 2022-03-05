@@ -7,10 +7,4 @@ describe('Test the pages routes', () => {
       .get('/')
       .expect(200, done);
   });
-
-  test('Health check should return a status code 200', (done) => {
-    request(app)
-      .get('/up')
-      .expect(200, done);
-  });
 });

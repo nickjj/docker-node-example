@@ -13,6 +13,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- Refactor `/up/` endpoint into its own view and add `/up/databases` as a second URL
+
 #### Languages and services
 
 - Update `Node` to `16.14.0`
