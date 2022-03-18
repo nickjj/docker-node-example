@@ -22,12 +22,12 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
-- Update `connect-redis` to `6.1.1`
+- Update `connect-redis` to `6.1.3`
 - Update `eslint-plugin-import` to `2.25.4`
-- Update `eslint` to `8.10.0`
+- Update `eslint` to `8.11.0`
 - Update `express` to `4.17.3`
 - Update `jest` to `27.5.1`
-- Update `knex` to `1.0.3`
+- Update `knex` to `1.0.4`
 - Update `objection` to `3.0.1`
 - Update `pg` to `8.7.3`
 - Update `superagent` to `7.1.1`
