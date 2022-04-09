@@ -7,19 +7,19 @@
     "express": "4.17.3",
     "express-ejs-layouts": "2.5.1",
     "express-session": "1.17.2",
-    "knex": "1.0.4",
+    "knex": "1.0.5",
     "morgan": "1.10.0",
     "objection": "3.0.1",
     "pg": "8.7.3",
     "redis": "3.1.2"
   },
   "devDependencies": {
-    "eslint": "8.11.0",
+    "eslint": "8.13.0",
     "eslint-config-airbnb-base": "15.0.0",
-    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-import": "2.26.0",
     "jest": "27.5.1",
     "nodemon": "2.0.15",
-    "superagent": "7.1.1",
+    "superagent": "7.1.2",
     "supertest": "6.2.2"
   },
   "scripts": {
