@@ -7,6 +7,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+- Nothing yet!
+
+## [0.4.0] - 2022-05-15
+
 ### Added
 
 - [esbuild-copy-static-files](https://github.com/nickjj/esbuild-copy-static-files) plugin to drastically improve how static files are copied (check `frontend/assets/esbuild.config.js`)
@@ -145,7 +149,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Everything!
 
-[Unreleased]: https://github.com/nickjj/docker-node-example/compare/0.3.0...HEAD
+[Unreleased]: https://github.com/nickjj/docker-node-example/compare/0.4.0...HEAD
+[0.4.0]: https://github.com/nickjj/docker-node-example/compare/0.3.0...0.4.0
 [0.3.0]: https://github.com/nickjj/docker-node-example/compare/0.2.0...0.3.0
 [0.2.0]: https://github.com/nickjj/docker-node-example/compare/0.1.0...0.2.0
 [0.1.0]: https://github.com/nickjj/docker-node-example/releases/tag/0.1.0
