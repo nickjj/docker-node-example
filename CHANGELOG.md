@@ -19,6 +19,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Update `Node` to `16.14.2`
 - Update `Postgres` to `14.2`
+- Update `Redis` to `7.0.0`
 
 #### Back-end dependencies
 
