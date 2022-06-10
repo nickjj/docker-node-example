@@ -15,6 +15,13 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `PostgreSQL` to `14.3`
 - Update `Redis` to `7.0.1`
 
+#### Back-end dependencies
+
+- Update `eslint` to `8.17.0`
+- Update `jest` to `28.1.1`
+- Update `knex` to `2.1.0`
+- Update `superagent` to `7.1.6`
+
 ## [0.4.0] - 2022-05-15
 
 ### Added
