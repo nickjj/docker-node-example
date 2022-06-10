@@ -22,6 +22,12 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `knex` to `2.1.0`
 - Update `superagent` to `7.1.6`
 
+#### Front-end dependencies
+
+- Update `esbuild` to `0.14.43`
+- Update `postcss` to `8.4.14`
+- Update `tailwindcss` to `3.1.2`
+
 ## [0.4.0] - 2022-05-15
 
 ### Added
