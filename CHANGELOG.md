@@ -17,10 +17,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
-- Update `eslint` to `8.19.0`
-- Update `jest` to `28.1.2`
-- Update `knex` to `2.1.0`
-- Update `nodemon` to `2.0.18`
+- Update `eslint` to `8.21.0`
+- Update `jest` to `28.1.3`
+- Update `knex` to `2.2.0`
+- Update `nodemon` to `2.0.19`
 - Update `superagent` to `8.0.0`
 - Update `supertest` to `6.2.4`
 
