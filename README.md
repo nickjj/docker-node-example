@@ -122,6 +122,12 @@ Docker and want to learn it in detail check out the [additional resources
 links](#learn-more-about-docker-and-node) near the bottom of this
 README.
 
+You'll also need to enable Docker Compose v2 support if you're using Docker
+Desktop. On native Linux without Docker Desktop you can [install it as a plugin
+to Docker](https://docs.docker.com/compose/install/linux/). It's been generally
+available for a while now and very stable. This project uses a specific Docker
+Compose profiles feature that only works with Docker Compose v2.
+
 If you're using Windows, it will be expected that you're following along inside
 of [WSL or WSL
 2](https://nickjanetakis.com/blog/a-linux-dev-environment-on-windows-with-wsl-2-docker-desktop-and-more).
@@ -137,11 +143,10 @@ cd hellonode
 # Optionally checkout a specific tag, such as: git checkout 0.4.0
 ```
 
-#### Copy a few example files because the real files are git ignored:
+#### Copy an example .env file because the real one is git ignored:
 
 ```sh
 cp .env.example .env
-cp docker-compose.override.yml.example docker-compose.override.yml
 ```
 
 #### Build everything:
