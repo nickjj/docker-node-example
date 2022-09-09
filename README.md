@@ -140,7 +140,7 @@ these commands for PowerShell if you want.
 git clone https://github.com/nickjj/docker-node-example hellonode
 cd hellonode
 
-# Optionally checkout a specific tag, such as: git checkout 0.4.0
+# Optionally checkout a specific tag, such as: git checkout 0.5.0
 ```
 
 #### Copy an example .env file because the real one is git ignored:

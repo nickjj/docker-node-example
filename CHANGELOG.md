@@ -7,6 +7,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+- Nothing yet!
+
+## [0.5.0] - 2022-09-09
+
 ### Added
 
 - `set -o nounset` to `run` script to exit if there's any undefined variables
@@ -186,7 +190,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Everything!
 
-[Unreleased]: https://github.com/nickjj/docker-node-example/compare/0.4.0...HEAD
+[Unreleased]: https://github.com/nickjj/docker-node-example/compare/0.5.0...HEAD
+[0.5.0]: https://github.com/nickjj/docker-node-example/compare/0.4.0...0.5.0
 [0.4.0]: https://github.com/nickjj/docker-node-example/compare/0.3.0...0.4.0
 [0.3.0]: https://github.com/nickjj/docker-node-example/compare/0.2.0...0.3.0
 [0.2.0]: https://github.com/nickjj/docker-node-example/compare/0.1.0...0.2.0
