@@ -11,6 +11,14 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Reference `PORT` variable in the `docker-compose.yml` web service instead of hard coding `8000`
 
+#### Back-end dependencies
+
+- Update `eslint` to `8.24.0`
+- Update `jest` to `29.0.3`
+- Update `knex` to `2.3.0`
+- Update `nodemon` to `2.0.20`
+- Update `pg` to `8.8.0`
+
 #### Languages and services
 
 - Update `Redis` to `7.0.5`
