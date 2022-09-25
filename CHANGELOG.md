@@ -11,6 +11,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Reference `PORT` variable in the `docker-compose.yml` web service instead of hard coding `8000`
 
+#### Languages and services
+
+- Update `Redis` to `7.0.5`
+
 #### Back-end dependencies
 
 - Update `eslint` to `8.24.0`
@@ -24,10 +28,6 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `autoprefixer` to `10.4.12`
 - Update `esbuild` to `0.15.9`
 - Update `postcss-import` to `15.0.0`
-
-#### Languages and services
-
-- Update `Redis` to `7.0.5`
 
 ## [0.5.0] - 2022-09-09
 
