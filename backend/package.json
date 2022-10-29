@@ -14,13 +14,13 @@
     "redis": "3.1.2"
   },
   "devDependencies": {
-    "eslint": "8.25.0",
+    "eslint": "8.26.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-import": "2.26.0",
-    "jest": "29.1.2",
+    "jest": "29.2.2",
     "nodemon": "2.0.20",
-    "superagent": "8.0.2",
-    "supertest": "6.3.0"
+    "superagent": "8.0.3",
+    "supertest": "6.3.1"
   },
   "scripts": {
     "watch-production": "node ./src/server",
