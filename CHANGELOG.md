@@ -26,7 +26,6 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
-- Update `connect-redis` to `7.0.1`
 - Update `eslint-plugin-import` to `2.27.5`
 - Update `eslint` to `8.35.0`
 - Update `express` to `4.18.2`
