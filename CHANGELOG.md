@@ -20,9 +20,9 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Languages and services
 
-- Update `Node` to `18.12.1`
+- Update `Node` to `18.15.0`
 - Update `Postgres` to `15.2`
-- Update `Redis` to `7.0.8`
+- Update `Redis` to `7.0.10`
 
 #### Back-end dependencies
 
