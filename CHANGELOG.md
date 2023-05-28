@@ -14,6 +14,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `eslint` to `8.41.0`
 - Update `pg` to `8.11.0`
 
+#### Front-end dependencies
+
+- Update `postcss` to `8.4.24`
+
 ## [0.6.0] - 2023-05-13
 
 ### Added
