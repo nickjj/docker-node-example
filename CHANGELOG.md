@@ -7,7 +7,12 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
-- Nothing yet!
+### Changed
+
+#### Back-end dependencies
+
+- Update `eslint` to `8.41.0`
+- Update `pg` to `8.11.0`
 
 ## [0.6.0] - 2023-05-13
 
