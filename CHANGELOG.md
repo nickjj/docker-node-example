@@ -7,7 +7,13 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- A new `processEnvRequired` functin in `backend/config/index.js` for non-optional env vars
+
 ### Changed
+
+- `SECRET_KEY` is now required
 
 #### Back-end dependencies
 

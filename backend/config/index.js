@@ -2,7 +2,7 @@ const config = module.exports;
 
 config.express = {
   port: process.env.PORT || 8000,
-  secret: process.env.SECRET_KEY,
+  secret: processEnvRequired('SECRET_KEY'),
 };
 
 config.pg = {
@@ -16,3 +16,13 @@ config.pg = {
 config.redis = {
   url: process.env.REDIS_URL || 'redis://redis:6379/0',
 };
+
+function processEnvRequired(key) {
+  const value = process.env[key];
+
+  if (value === undefined || value === null || value === '') {
+    throw(`KeyError: ${key} not found`);
+  }
+
+  return value;
+}
