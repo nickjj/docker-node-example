@@ -4,7 +4,7 @@ function processEnvRequired(key) {
   const value = process.env[key];
 
   if (value === undefined || value === null || value === '') {
-    throw(`KeyError: ${key} not found`);
+    throw Error(`KeyError: ${key} not found`);
   }
 
   return value;
