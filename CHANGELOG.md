@@ -9,7 +9,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
-- A new `processEnvRequired` functin in `backend/config/index.js` for non-optional env vars
+- `processEnvRequired` function in `backend/config/index.js` for non-optional env vars
 
 ### Changed
 
