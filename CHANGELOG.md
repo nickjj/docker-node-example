@@ -17,8 +17,9 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
-- Update `eslint` to `8.43.0`
-- Update `pg` to `8.11.0`
+- Update `eslint` to `8.44.0`
+- Update `objection` to `3.0.4`
+- Update `pg` to `8.11.1`
 
 #### Front-end dependencies
 
