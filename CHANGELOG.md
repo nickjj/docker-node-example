@@ -17,8 +17,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
-- Update `eslint` to `8.44.0`
-- Update `objection` to `3.0.4`
+- Update `eslint` to `8.45.0`
+- Update `jest` to `29.6.1`
+- Update `knex` to `2.5.1`
+- Update `nodemon` to `3.0.1`
+- Update `objection` to `3.1.1`
 - Update `pg` to `8.11.1`
 
 #### Front-end dependencies
