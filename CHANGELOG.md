@@ -15,6 +15,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - `SECRET_KEY` is now required
 
+#### Languages and services
+
+- Update `Node` to `18.17.0`
+
 #### Back-end dependencies
 
 - Update `eslint` to `8.45.0`
