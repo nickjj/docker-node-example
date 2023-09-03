@@ -22,13 +22,14 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
-- Update `eslint-plugin-import` to `2.28.0`
-- Update `eslint` to `8.46.0`
-- Update `jest` to `29.6.2`
+- Update `eslint-plugin-import` to `2.28.1`
+- Update `eslint` to `8.48.0`
+- Update `jest` to `29.6.4`
 - Update `knex` to `2.5.1`
 - Update `nodemon` to `3.0.1`
 - Update `objection` to `3.1.1`
-- Update `pg` to `8.11.2`
+- Update `pg` to `8.11.3`
+- Update `superagent` to `8.1.2`
 
 #### Front-end dependencies
 
