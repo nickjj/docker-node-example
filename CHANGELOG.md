@@ -28,10 +28,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `eslint` to `8.56.0`
 - Update `jest` to `29.7.0`
 - Update `knex` to `3.1.0`
-- Update `nodemon` to `3.0.2`
+- Update `nodemon` to `3.0.3`
 - Update `objection` to `3.1.3`
 - Update `pg` to `8.11.3`
 - Update `superagent` to `8.1.2`
+- Update `supertest` to `6.3.4`
 
 #### Front-end dependencies
 
