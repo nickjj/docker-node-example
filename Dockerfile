@@ -1,4 +1,4 @@
-FROM node:20.6.1-bookworm-slim AS assets
+FROM node:20.12.2-bookworm-slim AS assets
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app/frontend
@@ -33,7 +33,7 @@ CMD ["bash"]
 
 ###############################################################################
 
-FROM node:20.6.1-bookworm-slim AS app
+FROM node:20.12.2-bookworm-slim AS app
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app/backend
