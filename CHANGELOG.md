@@ -34,8 +34,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `nodemon` to `3.1.0`
 - Update `objection` to `3.1.4`
 - Update `pg` to `8.11.5`
-- Update `superagent` to `8.1.2`
-- Update `supertest` to `6.3.4`
+- Update `superagent` to `9.0.2`
+- Update `supertest` to `7.0.0`
 
 #### Front-end dependencies
 
