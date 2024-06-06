@@ -31,9 +31,9 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `express` to `4.19.2`
 - Update `jest` to `29.7.0`
 - Update `knex` to `3.1.0`
-- Update `nodemon` to `3.1.0`
+- Update `nodemon` to `3.1.3`
 - Update `objection` to `3.1.4`
-- Update `pg` to `8.11.5`
+- Update `pg` to `8.12.0`
 - Update `superagent` to `9.0.2`
 - Update `supertest` to `7.0.0`
 
