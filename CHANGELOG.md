@@ -26,12 +26,12 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Update `ejs` to `3.1.10`
 - Update `eslint-plugin-import` to `2.29.1`
-- Update `eslint` to `8.57.0`
+- Update `eslint` to `9.5.0`
 - Update `express-session` to `1.18.0`
 - Update `express` to `4.19.2`
 - Update `jest` to `29.7.0`
 - Update `knex` to `3.1.0`
-- Update `nodemon` to `3.1.3`
+- Update `nodemon` to `3.1.4`
 - Update `objection` to `3.1.4`
 - Update `pg` to `8.12.0`
 - Update `superagent` to `9.0.2`
