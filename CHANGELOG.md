@@ -7,6 +7,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+- Nothing yet!
+
+## [0.7.0] - 2024-08-09
+
 ### Added
 
 - `processEnvRequired` function in `backend/config/index.js` for non-optional env vars
@@ -271,7 +275,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Everything!
 
-[Unreleased]: https://github.com/nickjj/docker-node-example/compare/0.6.0...HEAD
+[Unreleased]: https://github.com/nickjj/docker-node-example/compare/0.7.0...HEAD
+[0.7.0]: https://github.com/nickjj/docker-node-example/compare/0.6.0...0.7.0
 [0.6.0]: https://github.com/nickjj/docker-node-example/compare/0.5.0...0.6.0
 [0.5.0]: https://github.com/nickjj/docker-node-example/compare/0.4.0...0.5.0
 [0.4.0]: https://github.com/nickjj/docker-node-example/compare/0.3.0...0.4.0

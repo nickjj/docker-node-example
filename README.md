@@ -97,7 +97,7 @@ open an issue or PR.
     - Add `page` route to render a home page
     - Add `up` route to provide a few health check pages
 - **Config**:
-    - Log to STDOUT so that Docker can consume and deal with log output 
+    - Log to STDOUT so that Docker can consume and deal with log output
     - Extract a bunch of configuration settings into environment variables
     - `backend/config/index.js` and the `.env` file handles configuration in all environments
 - **Front-end assets**:
@@ -142,7 +142,7 @@ these commands for PowerShell if you want.
 git clone https://github.com/nickjj/docker-node-example hellonode
 cd hellonode
 
-# Optionally checkout a specific tag, such as: git checkout 0.6.0
+# Optionally checkout a specific tag, such as: git checkout 0.7.0
 ```
 
 #### Copy an example .env file because the real one is git ignored:
@@ -373,7 +373,7 @@ couple of free and paid resources. There's Google too!
 
 ### Learn more about Docker and Node
 
-#### Official documentation 
+#### Official documentation
 
 - <https://docs.docker.com/>
 - <https://expressjs.com/>
