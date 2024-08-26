@@ -19,7 +19,7 @@
     "eslint-plugin-import": "2.29.1",
     "jest": "29.7.0",
     "nodemon": "3.1.4",
-    "superagent": "10.0.0",
+    "superagent": "10.1.0",
     "supertest": "7.0.0"
   },
   "scripts": {
