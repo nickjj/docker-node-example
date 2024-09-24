@@ -14,7 +14,7 @@ practices](https://nickjanetakis.com/blog/best-practices-around-production-ready
 based on building and deploying dozens of assorted Dockerized web apps since
 late 2014.
 
-**This app is using Express 4.19.2 and Node 20.12.2**. The screenshot doesn't
+**This app is using Express 4.21.0 and Node 20.12.2**. The screenshot doesn't
 get updated every time I bump the versions:
 
 [![Screenshot](.github/docs/screenshot.jpg)](https://github.com/nickjj/docker-node-example/blob/main/.github/docs/screenshot.jpg?raw=true)

@@ -16,6 +16,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
+- Update `eslint-plugin-import` to `2.30.0`
+- Update `express` to `4.21.0`
+- Update `nodemon` to `3.1.7`
+- Update `pg` to `8.13.0`
 - Update `superagent` to `10.1.0`
 
 #### Front-end dependencies
