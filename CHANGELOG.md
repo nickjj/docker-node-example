@@ -22,8 +22,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `express` to `4.21.1`
 - Update `nodemon` to `3.1.7`
 - Update `objection` to `3.1.5`
-- Update `pg` to `8.13.0`
-- Update `superagent` to `10.1.0`
+- Update `pg` to `8.13.1`
+- Update `superagent` to `10.1.1`
 
 #### Front-end dependencies
 
