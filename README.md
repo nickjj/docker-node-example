@@ -330,6 +330,9 @@ Without Docker you'd normally run `yarn install` from either your `backend/` or
 these commands are in our `Dockerfile` we can get away with doing a
 `docker compose build` but don't run that just yet.
 
+You can also access Yarn in the `backend/` and `frontend/` in Docker with
+`./run yarn` and `./run yarn:frontend` after you've upped the project.
+
 #### In development:
 
 You can run `./run yarn:outdated` or `./run yarn:outdated:frontend` to get a
@@ -337,10 +340,14 @@ list of outdated dependencies based on what you currently have installed. Once
 you've figured out what you want to update, go make those updates in your
 `backend/package.json` and / or `frontend/package.json` file.
 
-Then to update your dependencies you can run `./run yarn:install` or `./run
-yarn:install:frontend`. That'll make sure any lock files get copied from
-Docker's image (thanks to volumes) into your code repo and now you can commit
+
+Then to update your dependencies you can run `./run deps:install`. This will
+build a new image with any new dependencies and also make sure any lock file
+updates get copied from your image into your code repo and now you can commit
 those files to version control like usual.
+
+Also, you can run `./run deps:install --no-build` to only copy lock file
+updates without re-building an image.
 
 You can check out the
 [run](https://github.com/nickjj/docker-node-example/blob/main/run) file to see

@@ -20,12 +20,6 @@ function _dc {
   docker compose "${DC}" ${TTY} "${@}"
 }
 
-function _build_run_down {
-  docker compose build
-  docker compose run ${TTY} "${@}"
-  docker compose down
-}
-
 # -----------------------------------------------------------------------------
 
 function cmd {
@@ -76,24 +70,31 @@ function redis-cli {
   _dc redis redis-cli "${@}"
 }
 
-function yarn:install {
-  # Install yarn dependencies and write lock file
-  _build_run_down web yarn install
+function deps:install {
+  local no_build="${1:-}"
+
+  [ -z "${no_build}" ] && docker compose down && docker compose build
+
+  DC="run" _dc --no-deps --rm js yarn install
+  DC="run" _dc --no-deps --rm web yarn install
+}
+
+function yarn {
+  cmd yarn "${@}"
 }
 
 function yarn:outdated {
   # List any installed packages that are outdated
-  cmd yarn outdated
+  yarn outdated
 }
 
-function yarn:install:frontend {
-  # Install front-end yarn dependencies and write lock file
-  _build_run_down js yarn install
+function yarn:frontend {
+ _dc js yarn "${@}"
 }
 
 function yarn:outdated:frontend {
   # List any installed front-end packages that are outdated
-  _dc js yarn outdated
+  yarn:frontend outdated
 }
 
 function yarn:build:js {

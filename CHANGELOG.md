@@ -7,7 +7,15 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- `./run yarn [...]` to run any Yarn back-end command
+- `./run yarn:frontend [...]` to run any Yarn front-end command
+
 ### Changed
+
+- Replace `./run yarn:install` with `./run deps:install [--no-build]` to install any deps
+- Replace `./run yarn:install:frontend` with `./run deps:install [--no-build]` to install any deps
 
 #### Languages and services
 
