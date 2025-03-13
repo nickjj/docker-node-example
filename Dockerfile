@@ -21,8 +21,8 @@ RUN yarn install && yarn cache clean
 
 ARG NODE_ENV="production"
 ENV NODE_ENV="${NODE_ENV}" \
-    PATH="${PATH}:/node_modules/.bin" \
-    USER="node"
+  PATH="${PATH}:/node_modules/.bin" \
+  USER="node"
 
 COPY --chown=node:node . ..
 
@@ -56,8 +56,8 @@ RUN yarn install && yarn cache clean
 
 ARG NODE_ENV="production"
 ENV NODE_ENV="${NODE_ENV}" \
-    PATH="${PATH}:/node_modules/.bin" \
-    USER="node"
+  PATH="${PATH}:/node_modules/.bin" \
+  USER="node"
 
 COPY --chown=node:node --from=assets /app/public /public
 COPY --chown=node:node backend/ ./
