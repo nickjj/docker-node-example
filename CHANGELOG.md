@@ -18,6 +18,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Replace `./run yarn:install:frontend` with `./run deps:install [--no-build]` to install any deps
 - Allow overriding `$TTY` as an environment variable in the `run` script
 - Use `.hadolint.yaml` to configure Hadolint instead of inline flags
+- Refactor `Dockerfile` to use multi-stage app builds (~50% / 250MB image size reduction!)
 
 #### Languages and services
 

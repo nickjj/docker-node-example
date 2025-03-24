@@ -33,7 +33,7 @@ CMD ["bash"]
 
 ###############################################################################
 
-FROM node:22.14.0-bookworm-slim AS app
+FROM node:22.14.0-bookworm-slim AS app-build
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app/backend
@@ -59,7 +59,34 @@ ENV NODE_ENV="${NODE_ENV}" \
   PATH="${PATH}:/node_modules/.bin" \
   USER="node"
 
+CMD ["bash"]
+
+###############################################################################
+
+FROM node:22.14.0-bookworm-slim AS app
+LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
+
+WORKDIR /app/backend
+
+ARG UID=1000
+ARG GID=1000
+
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends curl libpq-dev \
+  && rm -rf /var/lib/apt/lists/* /usr/share/doc /usr/share/man \
+  && apt-get clean \
+  && groupmod -g "${GID}" node && usermod -u "${UID}" -g "${GID}" node \
+  && mkdir -p /node_modules && chown node:node -R /node_modules /app
+
+USER node
+
+ARG NODE_ENV="production"
+ENV NODE_ENV="${NODE_ENV}" \
+  PATH="${PATH}:/node_modules/.bin" \
+  USER="node"
+
 COPY --chown=node:node --from=assets /app/public /public
+COPY --chown=node:node --from=app-build /node_modules /node_modules
 COPY --chown=node:node backend/ ./
 COPY --chown=node:node bin/ /app/bin
 
