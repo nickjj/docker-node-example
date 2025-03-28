@@ -59,6 +59,11 @@ lint:shell() {
     -exec grep --quiet '^#!.*sh' {} \; -exec "${cmd[@]}" {} +
 }
 
+lint() {
+  # Lint back-end
+  cmd eslint "./**/*.js" "${@}"
+}
+
 format:shell() {
   # Format shell scripts
   local cmd=(shfmt)
@@ -78,9 +83,13 @@ format:shell() {
   "${cmd[@]}" "${maybe_write[@]}" "${@}" .
 }
 
-lint() {
-  # Lint back-end
-  cmd eslint "./**/*.js" "${@}"
+quality() {
+  # Perform all code quality commands together
+  lint:dockerfile
+  lint:shell
+  lint
+
+  format:shell
 }
 
 test() {

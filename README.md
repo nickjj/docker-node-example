@@ -188,7 +188,8 @@ Visit <http://localhost:8000> in your favorite browser.
 ./run lint
 ```
 
-*We'll go over that `./run` script in a bit!*
+*There's also a `./run quality` command to lint and format all files. We'll go
+over that `./run` script in a bit!*
 
 #### Running the test suite:
 
@@ -299,7 +300,7 @@ adding custom changes.
 
 ```sh
 # Then in a 2nd terminal once it's up and ready.
-./run lint
+./run quality
 ./run test
 ```
 
