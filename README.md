@@ -326,8 +326,13 @@ much appreciated!
 
 ## Updating dependencies
 
-Let's say you've customized your app and it's time to add a new dependency,
-either for the front-end or back-end.
+You can run `./run yarn:outdated` or `./run yarn:outdated:frontend` to get a
+list of outdated dependencies based on what you currently have installed. Once
+you've figured out what you want to update, go make those updates in your
+`backend/package.json` and / or `frontend/package.json` file.
+
+Or, let's say you've customized your app and it's time to add a new dependency,
+for the front-end or back-end.
 
 #### In development:
 
@@ -339,7 +344,7 @@ either for the front-end or back-end.
 
 ##### Option 2
 
-1. Run `./run yarn add mypackage --no-lockfile ` or `./run yarn:frontend add mypackage --no-lockfile` which will update that specific `package.json` with the latest version of that package but not install it
+1. Run `./run yarn add mypackage --no-lockfile` or `./run yarn:frontend add mypackage --no-lockfile` which will update that specific `package.json` with the latest version of that package but not install it
 2. The same step as step 2 from option 1
 
 Either option is fine, it's up to you based on what's more convenient at the
