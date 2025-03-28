@@ -326,33 +326,28 @@ much appreciated!
 
 ## Updating dependencies
 
-Without Docker you'd normally run `yarn install` from either your `backend/` or
-`frontend/` directory. With Docker it's basically the same thing and since
-these commands are in our `Dockerfile` we can get away with doing a
-`docker compose build` but don't run that just yet.
-
-You can also access Yarn in the `backend/` and `frontend/` in Docker with
-`./run yarn` and `./run yarn:frontend` after you've upped the project.
+Let's say you've customized your app and it's time to add a new dependency,
+either for the front-end or back-end.
 
 #### In development:
 
-You can run `./run yarn:outdated` or `./run yarn:outdated:frontend` to get a
-list of outdated dependencies based on what you currently have installed. Once
-you've figured out what you want to update, go make those updates in your
-`backend/package.json` and / or `frontend/package.json` file.
+##### Option 1
 
+1. Directly edit `backend/package.json` or `frontend/package.json` to add your package
+2. `./run deps:install` or `./run deps:install --no-build`
+    - The `--no-build` option will only write out a new lock file without re-building your image
 
-Then to update your dependencies you can run `./run deps:install`. This will
-build a new image with any new dependencies and also make sure any lock file
-updates get copied from your image into your code repo and now you can commit
-those files to version control like usual.
+##### Option 2
 
-Also, you can run `./run deps:install --no-build` to only copy lock file
-updates without re-building an image.
+1. Run `./run yarn add mypackage --no-lockfile ` or `./run yarn:frontend add mypackage --no-lockfile` which will update that specific `package.json` with the latest version of that package but not install it
+2. The same step as step 2 from option 1
 
-You can check out the
-[run](https://github.com/nickjj/docker-node-example/blob/main/run) file to see
-what these commands do in more detail.
+Either option is fine, it's up to you based on what's more convenient at the
+time. You can modify the above workflows for updating an existing package or
+removing one as well.
+
+You can also access `yarn` in Docker with `./run yarn` and `./run yarn:frontend`
+after you've upped the project.
 
 #### In CI:
 
@@ -366,7 +361,7 @@ under the `ci:test` function.
 This is usually a non-issue since you'll be pulling down pre-built images from
 a Docker registry but if you decide to build your Docker images directly on
 your server you could run `docker compose build` as part of your deploy
-pipeline.
+pipeline which is similar to how it would work in CI.
 
 ## See a way to improve something?
 
