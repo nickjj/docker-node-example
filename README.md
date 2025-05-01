@@ -12,7 +12,7 @@ practices](https://nickjanetakis.com/blog/best-practices-around-production-ready
 based on building and deploying dozens of assorted Dockerized web apps since
 late 2014.
 
-**This app is using Express 4.21.2 and Node 22.14.0**. The screenshot shows
+**This app is using Express 4.21.2 and Node 22.15.0**. The screenshot shows
 `X.X.X` since they get updated regularly:
 
 [![Screenshot](.github/docs/screenshot.jpg)](https://github.com/nickjj/docker-node-example/blob/main/.github/docs/screenshot.jpg?raw=true)
