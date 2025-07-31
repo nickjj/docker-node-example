@@ -32,14 +32,15 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 #### Back-end dependencies
 
 - Update `eslint-plugin-import` to `2.32.0`
-- Update `express-session` to `1.18.1`
+- Update `express-session` to `1.18.2`
 - Update `express` to `5.1.0`
-- Update `jest` to `30.0.3`
+- Update `jest` to `30.0.5`
+- Update `morgan` to `1.10.1`
 - Update `nodemon` to `3.1.10`
 - Update `objection` to `3.1.5`
-- Update `pg` to `8.16.2`
-- Update `superagent` to `10.2.1`
-- Update `supertest` to `7.1.1`
+- Update `pg` to `8.16.3`
+- Update `superagent` to `10.2.3`
+- Update `supertest` to `7.1.4`
 
 #### Front-end dependencies
 

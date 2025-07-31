@@ -6,21 +6,21 @@
     "ejs": "3.1.10",
     "express": "5.1.0",
     "express-ejs-layouts": "2.5.1",
-    "express-session": "1.18.1",
+    "express-session": "1.18.2",
     "knex": "3.1.0",
-    "morgan": "1.10.0",
+    "morgan": "1.10.1",
     "objection": "3.1.5",
-    "pg": "8.16.2",
+    "pg": "8.16.3",
     "redis": "3.1.2"
   },
   "devDependencies": {
     "eslint": "8.57.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-import": "2.32.0",
-    "jest": "30.0.3",
+    "jest": "30.0.5",
     "nodemon": "3.1.10",
-    "superagent": "10.2.1",
-    "supertest": "7.1.1"
+    "superagent": "10.2.3",
+    "supertest": "7.1.4"
   },
   "scripts": {
     "watch-production": "node ./src/server",
