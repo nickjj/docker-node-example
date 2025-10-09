@@ -1,4 +1,4 @@
-FROM node:22.19.0-trixie-slim AS assets
+FROM node:22.20.0-trixie-slim AS assets
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app/frontend
@@ -33,7 +33,7 @@ CMD ["bash"]
 
 ###############################################################################
 
-FROM node:22.19.0-trixie-slim AS app-build
+FROM node:22.20.0-trixie-slim AS app-build
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app/backend
@@ -63,7 +63,7 @@ CMD ["bash"]
 
 ###############################################################################
 
-FROM node:22.19.0-trixie-slim AS app
+FROM node:22.20.0-trixie-slim AS app
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app/backend
