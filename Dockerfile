@@ -3,14 +3,14 @@ LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app/frontend
 
-ARG UID=1000
-ARG GID=1000
+ARG APP_UID=1000
+ARG APP_GID=1000
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends build-essential \
   && rm -rf /var/lib/apt/lists/* /usr/share/doc /usr/share/man \
   && apt-get clean \
-  && groupmod -g "${GID}" node && usermod -u "${UID}" -g "${GID}" node \
+  && groupmod -g "${APP_GID}" node && usermod -u "${APP_UID}" -g "${APP_GID}" node \
   && mkdir -p /node_modules && chown node:node -R /node_modules /app
 
 USER node
@@ -38,14 +38,14 @@ LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app/backend
 
-ARG UID=1000
-ARG GID=1000
+ARG APP_UID=1000
+ARG APP_GID=1000
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends build-essential curl libpq-dev \
   && rm -rf /var/lib/apt/lists/* /usr/share/doc /usr/share/man \
   && apt-get clean \
-  && groupmod -g "${GID}" node && usermod -u "${UID}" -g "${GID}" node \
+  && groupmod -g "${APP_GID}" node && usermod -u "${APP_UID}" -g "${APP_GID}" node \
   && mkdir -p /node_modules && chown node:node -R /node_modules /app
 
 USER node
@@ -68,14 +68,14 @@ LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app/backend
 
-ARG UID=1000
-ARG GID=1000
+ARG APP_UID=1000
+ARG APP_GID=1000
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends curl libpq-dev \
   && rm -rf /var/lib/apt/lists/* /usr/share/doc /usr/share/man \
   && apt-get clean \
-  && groupmod -g "${GID}" node && usermod -u "${UID}" -g "${GID}" node \
+  && groupmod -g "${APP_GID}" node && usermod -u "${APP_UID}" -g "${APP_GID}" node \
   && mkdir -p /node_modules && chown node:node -R /node_modules /app
 
 USER node
