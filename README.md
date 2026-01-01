@@ -103,7 +103,6 @@ open an issue or PR.
     - Custom `502.html` and `maintenance.html` pages
     - Generate favicons using modern best practices
 - **Express defaults that are changed**:
-
     - `public/` is the static directory where Express will serve static files from
 
 Besides the Node app itself:
@@ -139,8 +138,6 @@ these commands for PowerShell if you want.
 ```sh
 git clone https://github.com/nickjj/docker-node-example hellonode
 cd hellonode
-
-# Optionally checkout a specific tag, such as: git checkout 0.7.0
 ```
 
 #### Copy an example .env file because the real one is git ignored:
