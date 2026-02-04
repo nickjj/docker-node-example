@@ -6,11 +6,11 @@
     "ejs": "4.0.1",
     "express": "5.2.1",
     "express-ejs-layouts": "2.5.1",
-    "express-session": "1.18.2",
+    "express-session": "1.19.0",
     "knex": "3.1.0",
     "morgan": "1.10.1",
     "objection": "3.1.5",
-    "pg": "8.17.1",
+    "pg": "8.18.0",
     "redis": "3.1.2"
   },
   "devDependencies": {
