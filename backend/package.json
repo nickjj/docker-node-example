@@ -10,7 +10,7 @@
     "knex": "3.1.0",
     "morgan": "1.10.1",
     "objection": "3.1.5",
-    "pg": "8.18.0",
+    "pg": "8.19.0",
     "redis": "3.1.2"
   },
   "devDependencies": {
@@ -18,7 +18,7 @@
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-import": "2.32.0",
     "jest": "30.2.0",
-    "nodemon": "3.1.11",
+    "nodemon": "3.1.14",
     "superagent": "10.3.0",
     "supertest": "7.2.2"
   },
