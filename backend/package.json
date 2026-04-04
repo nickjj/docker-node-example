@@ -7,7 +7,7 @@
     "express": "5.2.1",
     "express-ejs-layouts": "2.5.1",
     "express-session": "1.19.0",
-    "knex": "3.2.6",
+    "knex": "3.2.9",
     "morgan": "1.10.1",
     "objection": "3.1.5",
     "pg": "8.20.0",

@@ -4231,10 +4231,10 @@ keyv@^4.5.3:
   dependencies:
     json-buffer "3.0.1"
 
-knex@3.2.6:
-  version "3.2.6"
-  resolved "https://registry.yarnpkg.com/knex/-/knex-3.2.6.tgz#d6653ebf7961a83ae0014db1a7c56c75ce1ffa00"
-  integrity sha512-26I1Tvx0D9SOsFBF9jRWT/JdE3FPI52jAwYpXfREEtnoqgjGvAi8/ux8ktjaTC9IQcAVTCrREkOpa7lrjeAcow==
+knex@3.2.9:
+  version "3.2.9"
+  resolved "https://registry.yarnpkg.com/knex/-/knex-3.2.9.tgz#6fa1e570d18dab99d5e95d911b04a96c2ce8e549"
+  integrity sha512-dtAILTjBMaG8YloP5oBxohDIKyIsdQ/TkcVvSjhsksvsjeH63Y0PADyuMDfNZKbVT3Rlx3vEYVBlecbPT/KerA==
   dependencies:
     colorette "2.0.19"
     commander "^10.0.0"
