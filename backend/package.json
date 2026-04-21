@@ -3,7 +3,7 @@
   "main": "./src/server",
   "dependencies": {
     "connect-redis": "6.1.3",
-    "ejs": "5.0.1",
+    "ejs": "5.0.2",
     "express": "5.2.1",
     "express-ejs-layouts": "2.5.1",
     "express-session": "1.19.0",
