@@ -13,7 +13,7 @@ RUN apt-get update \
   && groupmod -g "${APP_GID}" node && usermod -u "${APP_UID}" -g "${APP_GID}" node \
   && mkdir -p /node_modules && chown node:node -R /node_modules /app
 
-USER 1000
+USER node
 
 COPY --chown=node:node frontend/package.json frontend/*yarn* ./
 
@@ -48,7 +48,7 @@ RUN apt-get update \
   && groupmod -g "${APP_GID}" node && usermod -u "${APP_UID}" -g "${APP_GID}" node \
   && mkdir -p /node_modules && chown node:node -R /node_modules /app
 
-USER 1000
+USER node
 
 COPY --chown=node:node backend/package.json backend/*yarn* ./
 
@@ -78,7 +78,7 @@ RUN apt-get update \
   && groupmod -g "${APP_GID}" node && usermod -u "${APP_UID}" -g "${APP_GID}" node \
   && mkdir -p /node_modules && chown node:node -R /node_modules /app
 
-USER 1000
+USER node
 
 ARG NODE_ENV="production"
 ENV NODE_ENV="${NODE_ENV}" \
