@@ -19,8 +19,8 @@
     "eslint-plugin-import": "2.32.0",
     "jest": "30.5.2",
     "nodemon": "3.1.14",
-    "superagent": "10.4.1",
-    "supertest": "7.3.1"
+    "superagent": "10.4.2",
+    "supertest": "7.3.2"
   },
   "scripts": {
     "watch-production": "node ./src/server",
